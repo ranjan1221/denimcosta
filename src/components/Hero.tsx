@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden px-2 sm:px-4">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
@@ -84,25 +84,25 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center text-white px-2 sm:px-6 lg:px-8 max-w-2xl mx-auto">
         <div>
-          <h1 ref={titleRef} className="text-6xl sm:text-7xl lg:text-8xl font-bold mb-6 tracking-tight">
+          <h1 ref={titleRef} className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-4 sm:mb-6 tracking-tight leading-tight">
             DENIM
             <span className="block text-amber-400">COSTA</span>
           </h1>
           
-          <p ref={subtitleRef} className="text-xl sm:text-2xl lg:text-3xl mb-8 font-light leading-relaxed max-w-2xl mx-auto">
+          <p ref={subtitleRef} className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 sm:mb-8 font-light leading-relaxed max-w-xl mx-auto">
             Crafting premium denim with timeless style and uncompromising quality
           </p>
           
-          <div ref={buttonsRef} className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div ref={buttonsRef} className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12 w-full">
             <button
               onClick={scrollToProducts}
-              className="bg-white text-blue-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg"
+              className="w-full sm:w-auto bg-white text-blue-900 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg"
             >
               Explore Collection
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-blue-900 transform hover:scale-105 transition-all duration-300">
+            <button className="w-full sm:w-auto border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-white hover:text-blue-900 transform hover:scale-105 transition-all duration-300">
               Our Story
             </button>
           </div>

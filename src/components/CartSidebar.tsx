@@ -77,7 +77,7 @@ const CartSidebar: React.FC<CartSidebarProps> = ({
                   <div className="flex-1 min-w-0">
                     <h3 className="text-sm font-medium text-gray-800 truncate">{item.name}</h3>
                     <p className="text-xs text-gray-500">Size: {item.size}</p>
-                    <p className="text-sm font-semibold text-blue-900">${item.price}</p>
+                    <p className="text-sm font-semibold text-blue-900">₹{item.price}</p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <button
@@ -111,7 +111,7 @@ const CartSidebar: React.FC<CartSidebarProps> = ({
           <div className="border-t p-6">
             <div className="flex justify-between items-center mb-4">
               <span className="text-lg font-semibold text-gray-800">Total:</span>
-              <span className="text-2xl font-bold text-blue-900">${total.toFixed(2)}</span>
+              <span className="text-2xl font-bold text-blue-900">₹{total.toFixed(2)}</span>
             </div>
             <a
               href={`https://wa.me/9873819147?text=${encodeURIComponent('I want to checkout my order. Please deliver to: Plot No-12A, Lions Enclave, Marble Block, Vikas Nagar\nNear St Bharti School, Hastal, Uttam Nagar New Delhi-59')}`}
