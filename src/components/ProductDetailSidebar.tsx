@@ -118,10 +118,11 @@ const ProductDetailSidebar: React.FC<ProductDetailSidebarProps> = ({
             </div>
 
             <div className="flex items-center space-x-3">
-              <span className="text-3xl font-bold text-blue-900">${product.price}</span>
+              <span className="text-3xl font-bold text-blue-900">₹{product.price}</span>
               {product.originalPrice && (
-                <span className="text-lg text-gray-500 line-through">${product.originalPrice}</span>
+                <span className="text-lg text-gray-500 line-through">₹{product.originalPrice}</span>
               )}
+              <span className="ml-2 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-semibold">18% OFF</span>
             </div>
 
             <p className="text-gray-600 leading-relaxed">{product.description}</p>
@@ -191,7 +192,7 @@ const ProductDetailSidebar: React.FC<ProductDetailSidebarProps> = ({
               className="w-full bg-blue-900 text-white py-4 rounded-lg hover:bg-blue-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-medium text-lg flex items-center justify-center space-x-2"
             >
               <ShoppingCart className="h-5 w-5" />
-              <span>Add to Cart • ${(product.price * quantity).toFixed(2)}</span>
+              <span>Add to Cart • ₹{(product.price * quantity).toFixed(2)}</span>
             </button>
 
             {/* Product Features */}

@@ -102,35 +102,16 @@ const ContactForm: React.FC = () => {
     }, 3000);
   };
 
-  const bulkFeatures = [
-    {
-      icon: Package,
-      title: "Bulk Pricing",
-      description: "Special wholesale rates for orders of 50+ pieces"
-    },
-    {
-      icon: Users,
-      title: "Custom Branding",
-      description: "Add your logo and custom labels to our premium denim"
-    },
-    {
-      icon: Clock,
-      title: "Fast Turnaround",
-      description: "Quick production and delivery for your business needs"
-    }
-  ];
-
   return (
     <section id="contact" ref={sectionRef} className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 ref={titleRef} className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-            Bulk Orders & Wholesale
+            Connect With Us
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Partner with Denim Costa for your business needs. We offer competitive wholesale 
-            pricing, custom branding options, and dedicated support for bulk orders.
+            We'd love to hear from you. Reach out for any queries, feedback, or collaboration.
           </p>
         </div>
 
@@ -260,24 +241,7 @@ const ContactForm: React.FC = () => {
 
             {/* Bulk Features */}
             <div ref={featuresRef} className="space-y-4">
-              {bulkFeatures.map((feature, index) => (
-                <div
-                  key={index}
-                  className="bulk-feature bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
-                >
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                        <feature.icon className="h-6 w-6 text-blue-900" />
-                      </div>
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h4>
-                      <p className="text-gray-600">{feature.description}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
+              {/* The bulkFeatures array and its mapping are removed as per the edit hint. */}
             </div>
           </div>
         </div>
